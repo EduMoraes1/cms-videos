@@ -373,3 +373,9 @@ body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
 }
+
+.searchbutton{
+  width: 800px;
+  height: 50px;
+  border-radius: 30px;
+}
