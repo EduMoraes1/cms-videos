@@ -1,0 +1,20 @@
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+.carousel-control-next, .glyphicon-chevron-next, .carousel-control .icon-next{
+    background-color: #C0C0C0; 
+    max-width: 5%; 
+    max-height: 81%; 
+    right: -60px;
+  }
+
+  .carousel {
+    margin: 1.9rem;
+    margin-left: 0px;
+  }
+  
