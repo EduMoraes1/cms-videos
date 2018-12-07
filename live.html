@@ -16,28 +16,79 @@
    </head>
    <body id="page-top">
       <nav class="navbar navbar-expand navbar-light bg-light static-top">
-         <a class="navbar-brand mr-1" href="index.html"><img src="imgs/logo.png" alt="Netshow.me" width="150px"></a>
-         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"></form>
-         <ul class="navbar-nav ml-auto ml-md-0">
-            <li class="nav-item dropdown no-arrow">
-               <a href="" style="color: rgba(0,0,0,.9);" title="Assinar Plano"><i class="fas fa-user-edit fa-fw fa-2x"></i></a><br>
+          <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+              <i class="fas fa-bars fa-2x" style="color: #314E6F;margin-top: 15px;"></i>
+            </button>
+        <a class="navbar-brand mr-1" href="index.html"><img src="imgs/logo.png" alt="Netshow.me" width="150px"></a>
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"></form>
+        <ul class="navbar-nav ml-auto ml-md-0">
+          <li class="nav-item dropdown no-arrow">
+            <a href="" style="color: #314E6F" title="Assinar Plano"><i class="fas fa-user-edit fa-fw fa-2x"></i></a><br>
+          </li>
+          <li class="nav-item dropdown no-arrow mx-1">
+            <a href="" style="color: #314E6F" title="Configurações"><i class="fas fa-wrench fa-fw fa-2x"></i></a><br>
+          </li>
+          <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" style="color: #314E6F;padding: 0px;" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user-circle fa-fw fa-2x"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                <a class="dropdown-item" href="#">Perfil</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Sair</a>
+              </div>
             </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-               <a href="" style="color: rgba(0,0,0,.9);" title="Configurações"><i class="fas fa-wrench fa-fw fa-2x"></i></a><br>
-            </li>
-            <li class="nav-item dropdown no-arrow mx-1">
-               <a href="" style="color: rgba(0,0,0,.9);" title="Seu Perfil"><i class="fas fa-user-circle fa-fw fa-2x"></i></a><br>
-            </li>
-         </ul>
+        </ul>
       </nav>
       <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="sidebar navbar-nav toggled" style="background: #314e6f;">
+            <li class="nav-item">
+              <a class="nav-link" href="index-cms.html">
+                <i class="fas fa-fw fa-home"></i>
+                <span>Início</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="live.html">
+                <i class="fas fa-fw fa-clock"></i>
+                <span>Lives</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="on-demand.html">
+                <i class="fas fa-fw fa-video"></i>
+                <span>Vídeos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="over-top.html">
+                  <i class="fas fa-fw fa-file-video"></i>
+                  <span>Play</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="estatistica.html">
+                  <i class="fas fa-fw fa-chart-line"></i>
+                  <span>Estatísticas</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="templates.html">
+                  <i class="fas fa-fw fa-file-signature"></i>
+                  <span>Templates</span>
+                </a>
+              </li>
+          </ul>
          <div id="content-wrapper">
             <div class="container">
                <br>
                <div class="row">
-                  <div class="col-lg-12">
-                    <h1 style="color: #06baf6;">Live</h1>
-                    <a href="" style="float: right; margin-right: 14%;"><button type="button" class="btn btn-info" style="border-radius: 20px; background-color: #06baf6; border-color: #06baf6;">Iniciar uma Transmissão</button></a>
+                  <div class="col-lg-6">
+                    <h1 style="color: #06baf6;">Live <i class="fas fa-chart-line" style="font-size: 2rem;color: #ccc;"></i><span style="color: #ccc;font-size: 18px;margin-left: 15px;font-weight: 100;">Estatísticas</span></h1>
+                  </div>
+                  <div class="col-lg-4">
+                    <br><a href="" style="float: right; margin-right: 14%;"><button type="button" class="btn btn-info" style="border-radius: 20px; background-color: #06baf6; border-color: #06baf6;">Iniciar uma Transmissão</button></a>
                   </div>
                </div>
                <br>
@@ -45,7 +96,7 @@
                   <div class="col-lg-10">
                      <div class="row">
                         <div class="col-lg-12">
-                           <h2>Minhas Lives</h2>
+                           <h3 style="color: #ccc;">Minhas Lives</h3>
                            <hr>
                            <small>Eventos</small>
                         </div>
@@ -117,10 +168,10 @@
                                  <!--.item-->
                               </div>
 
-                              <a class="carousel-control-prev" href="#carrousel-1" role="button" data-slide="prev">
+                              <!-- <a class="carousel-control-prev" href="#carrousel-1" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="sr-only">Previous</span>
-                              </a>
+                              </a> -->
                               <a class="carousel-control-next text-faded" href="#carrousel-1" role="button" data-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="sr-only">Next</span>
@@ -197,10 +248,10 @@
                                  </div>
                                  <!--.item-->
                               </div>
-                              <a class="carousel-control-prev" href="#carrousel-2" role="button" data-slide="prev">
+                              <!-- <a class="carousel-control-prev" href="#carrousel-2" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="sr-only">Previous</span>
-                              </a>
+                              </a> -->
                               <a class="carousel-control-next text-faded" href="#carrousel-2" role="button" data-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="sr-only">Next</span>
@@ -212,13 +263,48 @@
                      </div>
                      <br>
                   </div>
-                  <div class="col-lg-2" style="float: right;display: flex;align-items: flex-end;">
-                     <button type="button" class="btn btn-info" style="border-radius: 20px; background-color: #06baf6; border-color: #06baf6;">Converse com um especialista</button>
-                  </div>
-               </div>
+                </div>
+                  <div class="row">
+                      <div class="col-lg-11">
+                         <button type="button" class="btn btn-info" style="border-radius: 20px; background-color: #06baf6; border-color: #06baf6;float: right;">Converse com um especialista</button>
+                      </div>
+                   </div>
             </div>
          </div>
       </div>
+      <footer class="footer bg-light" style="padding-top: 15px;padding-bottom: 15px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                <p class="text-muted small mb-4 mb-lg-0">&copy; Netshow.me 2018. Todos os direitos reservados.</p>
+              </div>
+              <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item mr-3" style="color: #314E6F;">
+                    <a href="https://www.facebook.com/netshow.me/" target="_blank"></a>
+                      <i class="fab fa-facebook fa-2x fa-fw"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item mr-3">
+                    <a href="https://twitter.com/netshowme/" target="_blank" style="color: #314E6F;">
+                      <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com/netshowme/" target="_blank" style="color: #314E6F;">
+                      <i class="fab fa-instagram fa-2x fa-fw"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/company/netshow-me/" target="_blank" style="color: #314E6F;">
+                      <i class="fab fa-linkedin fa-2x fa-fw"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
